@@ -108,10 +108,10 @@
           _calcPosition: function() {
             // verifica se o jogador 1 fez um ponto(x > largura do campo)
             if(this.x > field.w - gapX - this.r - rightPaddle.w ) {
-               // verifica se a rawuete direita esá na posição y da ball 
+               // verifica se a raquete direita esá na posição y da ball 
               if(this.y + this.r > rightPaddle.y &&
                  this.y - this.r < rightPaddle.y + rightPaddle.h){
-                    this._reverseX() //rebate a bola inverendo o eixo X
+                    this._reverseX() //rebate a bola invertendo o eixo X
                  } else {
                   // pontuar  o jogador 1
                   score.increaseHuman()
